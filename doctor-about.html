@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" 
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" 
+referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="doctor-about.css">
+</head>
+<body>
+    
+    <!-- ----------------   Header Section   --------------- -->
+    <section>
+        <div class="container">
+            <div>
+                <img src="./images/logo.png" alt="">
+            </div>
+            <div>
+                <div class="menu-bar">
+                    <i class="fa-solid fa-bars" id="menu-icon"></i>
+                </div>
+                <div class="list" id="navbar">
+                    <a href="Home.html">Home</a>
+                    <a href="Find-a Doc.html">Find a Doctor</a>
+                    <a href="Services.html">Services</a>
+                    <a href="Contact.html">Contact</a>
+                    <div><a href="Login.html" class="btn">Login</a></div>
+                </div>
+            </div>
+        </div>
+    </section>
+     <!-- ----------------   Header Section   --------------- -->
+
+     <!-- ----------------   Individual Doctor   --------------- -->
+      <section>
+        <div class="doctor-container">
+            <div class="main-grid">
+              
+              <!-- Doctor Details Section -->
+              <div class="doctor-details">
+                <!-- Doctor Info -->
+                <div class="doctor-info">
+                  <figure class="doctor-avatar">
+                    <img src="./images/doctor2[1].png" alt="Doctor">
+                  </figure>
+                  <div class="doctor-meta">
+                    <span class="doctor-role">Neurologist</span>
+                    <h3 class="doctor-name">Dr. Saleh Mehmood</h3>
+                    <div class="doctor-rating">
+                      <span class="rating">⭐ 4.8</span>
+                      <span>(272)</span>
+                    </div>
+                    <p class="doctor-description" style="font-size: 16px;">Providing expert neurological care with a focus on patient well-being and personalized treatment.</p>
+                  </div>
+                </div>
+      
+                <!-- Tabs for About and Feedback -->
+                <div class="tabs">
+                  <button class="tab active" id="aboutTab">About</button>
+                  <button class="tab" id="feedbackTab">Feedback</button>
+                </div>
+      <br><br>
+                <!-- Tab Content -->
+                <div class="tab-content">
+                  <div id="aboutContent" class="content" style="display: block;">
+                    <h3>About of <span class="doctor-name" style="color: #0066ff;">Saleh Mehmood</span></h3>    
+                    <p class="doctor-description">Dr. Saleh Mehmood is an experienced neurologist specializing in the diagnosis and treatment of brain and nervous system disorders. With a patient-focused approach, he is dedicated to providing personalized care and improving quality of life. Known for his expertise and compassionate nature, Dr. Saleh is committed to helping patients achieve better neurological health.</p>
+      <br><br><br>
+                    <h3>Education</h3><br>
+                    <div class="education" style="display: flex; justify-content: space-between; font-size: 17px; color: rgb(111, 110, 110);">
+                        <div >
+                            <span style="color: #0066ff;">Sep 13,2014 - Mar 13,2016 </span><br>
+                            <span>PhD in Surgeon</span>
+                        </div>
+                        <div>
+                            <p>New Apollo Hospital, New York.</p>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="education" style="display: flex; justify-content: space-between; font-size: 17px; color: rgb(111, 110, 110);">
+                        <div >
+                            <span style="color: #0066ff;">Sep 13,2014 - Mar 13,2016 </span><br>
+                            <span>PhD in Surgeon</span>
+                        </div>
+                        <div>
+                            <p>New Apollo Hospital, New York.</p>
+                        </div>
+                    </div>
+      <br><br><br>
+                    <h3>Experience</h3><br>
+                    <div class="experience" style="display: flex; justify-content: space-between; font-size: 17px; color: rgb(111, 110, 110);">
+                        <div>
+                            <span style="color: rgb(25, 167, 51);">Jul 4, 2010 - Aug 3, 2014</span><br>
+                            <span>Sr.Surgeon</span><br>
+                            <span>New Apollo Hospital, New York.</span>
+                        </div>
+                        <div>
+                            <span style="color: rgb(25, 167, 51);">Jul 4, 2010 - Aug 3, 2014</span><br>
+                            <span>Sr.Surgeon</span><br>
+                            <span>New Apollo Hospital, New York.</span>
+                        </div>
+                    </div>
+                  </div>
+
+                  <div id="feedbackContent" class="content">
+                    <!-- Feedback Section -->
+                    <h4>All reviews (272)</h4>
+                    <div class="review">
+                      <div class="review-meta">
+                        <div>
+                            <img src="./images/avatar-icon.png" alt="Avatar" class="review-avatar">
+                        </div>
+                        <div style="font-size: 15px;">
+                            <span style="color: #0066ff; font-size: 17px;">Ali Ahmed</span><br>
+                            <span>02/14/2023</span>
+                        </div>
+                        
+                      </div>
+                      <div class="review-rating">
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                      </div>
+                    </div>
+                    <p class="review-text">Good services, highly recommended 👍</p>
+                    <!-- Feedback Form -->
+                    <center><button onclick="showFeedbackForm()" class="doctor-btn">Give Feedback</button></center>
+                    <br><br>
+                    <div id="feedbackForm" style="display: none;">
+                        <span>How would you rate the overall experience?*</span>
+                        <div style="color: rgb(102, 101, 101); font-size: 25px;">
+                            <span>★</span>
+                            <span>★</span>
+                            <span>★</span>
+                            <span>★</span>
+                            <span>★</span>
+                        </div><br><br>
+                        <span>Share your feedback and suggestions*</span><br><br>
+                      <textarea placeholder="Write your message" style="height: 30vh; width: 80vh;"></textarea><br><br> <br>
+                      <button class="doctor-btn">Submit Feedback</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+      
+              <!-- Side Panel Section -->
+              <div class="side-panel">
+                <div class="panel-card">
+                <div class="panel-item" style="color: rgb(111, 110, 110); font-size: 20px;">
+                  <p>Ticket Price</p>
+                  <p style="color: black; font-weight: bold;">500 PKR</p>
+                </div>
+                <div>
+                  <p style="font-weight: 500; font-size: 19px;">Available Time Slots:</p>
+                    <div class="time" style="display: flex; justify-content: space-between;">
+                        <p>Sunday</p>
+                        <p>4:00 PM - 9:30 PM</p>
+                    </div>
+                    <div class="time" style="display: flex; justify-content: space-between;">
+                        <p>Tuesday</p>
+                        <p>4:00 PM - 9:30 PM</p>
+                    </div>
+                    <div class="time" style="display: flex; justify-content: space-between;">
+                        <p>Wednesday</p>
+                        <p>4:00 PM - 9:30 PM</p>
+                    </div>
+                </div>
+                <button class="book-appointment-btn" id="appointment-btn" >Book an Appointment</button>
+              </div>
+            </div>
+            </div>
+          </div>
+      </section>
+
+      <section>
+ <!-- Appointment Modal -->
+ <div id="appointment-modal" class="modal hidden">
+     <div class="modal-content">
+         <!-- Calendar Step -->
+         <div id="calendar-container">
+             <div id="calendar">
+                 <div id="calendar-header">
+                     <button id="prev-month">←</button>
+                     <span id="current-month"></span>
+                     <button id="next-month">→</button>
+                 </div>
+                 <div id="weekdays">
+                     <div>Sun</div>
+                     <div>Mon</div>
+                     <div>Tue</div>
+                     <div>Wed</div>
+                     <div>Thu</div>
+                     <div>Fri</div>
+                     <div>Sat</div>
+                 </div>
+                 <div id="days"></div>
+                 <button id="time-slot-btn" class="hidden">Select Time Slots</button>
+             </div>
+         </div>
+     </div>
+ </div>
+ <!-- Slot Modal -->
+ <div id="slot-modal" class="modal hidden">
+     <div class="modal-content">
+         <div id="time-slot-container">
+             <button id="back-to-calendar">← Back to Calendar</button>
+             <h3>Select Time Slot</h3>
+             <div class="time-slot" data-time="9:00 AM">9:00 AM</div>
+             <div class="time-slot" data-time="10:00 AM">10:00 AM</div>
+             <div class="time-slot" data-time="11:00 AM">11:00 AM</div>
+             <div class="time-slot" data-time="1:00 PM">12:00 PM</div>
+             <div class="time-slot" data-time="3:00 PM">3:00 PM</div>
+             <div class="time-slot" data-time="4:00 PM">4:00 PM</div>
+             <div class="time-slot" data-time="5:00 PM">5:00 PM</div>
+             <div class="time-slot" data-time="6:00 PM">6:00 PM</div>
+             <button id="confirm-appointment">Confirm Appointment</button>
+         </div>
+     </div>
+ </div>
+ <!-- Appointment Token Modal (new modal for token) -->
+ <div id="appointment-token-modal" class="modal hidden">
+     <div>
+         <div class="token-card">
+             <h2>Your Appointment Token</h2>
+             <div class="parent" style="display: flex; justify-content: space-around;">
+                 <div>
+                     <p>Name: <span id="user-name"></span></p>
+                     <p>Date: <span id="selected-date"></span></p>
+                     <p>Time: <span id="selected-time"></span></p>
+                 </div>
+                 <div>
+                     <p>Doctor: Saleh Mehmood</p>
+                     <p>Profession: Neurologist</p>
+                 </div>
+             </div>
+             <button id="close-token-modal">Close</button>
+         </div>
+     </div>
+ </div>
+      </section>
+     <!-- ----------------   Individual Doctor   --------------- -->
+     
+    <!-- ----------------   Footer Section   --------------- -->
+    <section>
+        <div class="footer-container">
+          <div class="side-1">
+              <div><img src="./images/logo.png" alt="logo"></div>
+              <p>"Book your health appointments online – quick, 
+                 <br class="display">easy, and convenient!".</p>
+              <div class="icons">
+                  <div class="youtube"><i class="fa-brands fa-youtube fa-2x"></i></div>
+                  <div class="github"><i class="fa-brands fa-github fa-2x"></i></div>
+                  <div class="instagram"><i class="fa-brands fa-square-instagram fa-2x"></i></div>
+                  <div class="linkdin"><i class="fa-brands fa-linkedin fa-2x"></i></div>
+              </div>
+          </div>
+          <div class="footer-part">
+              <h2>Quick links</h2>
+              <a href="#">Home</a>
+              <a href="#">About Us</a>
+              <a href="#">Services</a>
+              <a href="#">Blog</a>
+          </div>
+          <div class="footer-part">
+              <h2>I want to :</h2>
+              <a href="#">find a Doctor</a>
+              <a href="#">Request an Appointment</a>
+              <a href="#">Find a Location</a>
+              <a href="#">Get a Opinion</a>
+          </div>
+          <div class="footer-part">
+              <h2>Support</h2>
+              <a href="#">Donate</a>
+              <a href="#">Contact Us</a>
+              
+          </div>
+      </div>
+      </section>
+   <!-- ----------------   Footer Section   --------------- -->
+  
+  
+  
+<script>
+    // JavaScript to toggle the navigation menu on small screens
+    const menuIcon = document.getElementById('menu-icon');
+    const navbar = document.getElementById('navbar');
+  
+    menuIcon.addEventListener('click', () => {
+      navbar.classList.toggle('active'); // Toggle 'active' class to show/hide the menu
+    });
+  
+    document.getElementById('aboutTab').addEventListener('click', function() {
+      document.getElementById('aboutContent').style.display = 'block';
+      document.getElementById('feedbackContent').style.display = 'none';
+      this.classList.add('active');
+      document.getElementById('feedbackTab').classList.remove('active');
+    });
+
+    document.getElementById('feedbackTab').addEventListener('click', function() {
+      document.getElementById('feedbackContent').style.display = 'block';
+      document.getElementById('aboutContent').style.display = 'none';
+      this.classList.add('active');
+      document.getElementById('aboutTab').classList.remove('active');
+    });
+
+    // Feedback Form Visibility
+    function showFeedbackForm() {
+      document.getElementById('feedbackForm').style.display = 'block';
+    }
+
+
+    document.addEventListener('DOMContentLoaded', () => {
+            const bookAppointmentBtn = document.querySelector('.book-appointment-btn');
+            const appointmentModal = document.getElementById('appointment-modal');
+            const slotModal = document.getElementById('slot-modal');
+            const tokenModal = document.getElementById('appointment-token-modal');
+            const confirmAppointmentBtn = document.getElementById('confirm-appointment');
+            const selectedDateElement = document.getElementById('selected-date');
+            const selectedTimeElement = document.getElementById('selected-time');
+            const userNameElement = document.getElementById('user-name');
+            const slotBtn = document.getElementById('time-slot-btn');
+
+            const userName = "Ali"; // Replace with dynamic user data
+
+            // Show modal when clicking on "Book an Appointment"
+            bookAppointmentBtn.addEventListener('click', () => {
+                appointmentModal.style.display = 'flex';
+                showCalendar(new Date());
+            });
+
+            slotBtn.addEventListener('click', () => {
+                slotModal.style.display = 'flex';
+                appointmentModal.style.display = 'none';
+            });
+
+            // Show time slots after selecting a date
+            let selectedDate = null;
+            document.getElementById('days').addEventListener('click', (event) => {
+                if (event.target && event.target.classList.contains('day')) {
+                    selectedDate = event.target.getAttribute('data-date');
+                    selectedDateElement.textContent = selectedDate;
+                    document.getElementById('time-slot-btn').classList.remove('hidden'); // Show "Select Time Slots" button
+                }
+            });
+
+            // Show time slots when clicking the "Time Slots" button
+            document.getElementById('time-slot-btn').addEventListener('click', () => {
+                document.getElementById('calendar-container').classList.add('hidden');  // Hide calendar
+                document.getElementById('time-slot-container').classList.remove('hidden');  // Show time slots
+            });
+
+            // Back to calendar view
+            document.getElementById('back-to-calendar').addEventListener('click', () => {
+                document.getElementById('time-slot-container').classList.add('hidden');  // Hide time slots
+                document.getElementById('calendar-container').classList.remove('hidden');  // Show calendar
+            });
+
+            // Handle time slot selection
+            let selectedTime = "";
+            const timeSlots = document.querySelectorAll('.time-slot');
+            timeSlots.forEach(slot => {
+                slot.addEventListener('click', () => {
+                    selectedTime = slot.getAttribute('data-time');
+                    timeSlots.forEach(slot => slot.classList.remove('selected'));
+                    slot.classList.add('selected');
+                });
+            });
+
+            // Confirm appointment and show the token modal
+            confirmAppointmentBtn.addEventListener('click', () => {
+                if (selectedDate && selectedTime) {
+                    selectedDateElement.textContent = selectedDate;
+                    selectedTimeElement.textContent = selectedTime;
+                    userNameElement.textContent = userName;
+
+                    // Show the appointment token modal
+                    tokenModal.style.display = 'flex';
+                    slotModal.style.display = 'none';  // Hide the time slot modal
+                    appointmentModal.style.display = 'none';  // Hide the appointment modal
+                } else {
+                    alert("Please select both a date and a time.");
+                }
+            });
+
+            // Close the token modal when clicking the "Close" button
+            document.getElementById('close-token-modal').addEventListener('click', () => {
+                tokenModal.style.display = 'none';  // Close the token modal
+            });
+
+            // Show Calendar
+            function showCalendar(date) {
+                const month = date.getMonth();
+                const year = date.getFullYear();
+                const firstDay = new Date(year, month, 1);
+                const lastDay = new Date(year, month + 1, 0);
+                const daysInMonth = lastDay.getDate();
+                const startingDay = firstDay.getDay();
+
+                // Set the current month and year
+                document.getElementById('current-month').textContent = `${firstDay.toLocaleString('default', { month: 'long' })} ${year}`;
+
+                const daysContainer = document.getElementById('days');
+                daysContainer.innerHTML = '';
+
+                // Blank spaces for previous month's days
+                for (let i = 0; i < startingDay; i++) {
+                    const blankDay = document.createElement('div');
+                    daysContainer.appendChild(blankDay);
+                }
+
+                // Add the days of the current month
+                for (let i = 1; i <= daysInMonth; i++) {
+                    const dayElement = document.createElement('div');
+                    dayElement.textContent = i;
+                    dayElement.classList.add('day');
+                    dayElement.setAttribute('data-date', `${year}-${month + 1}-${i}`);
+                    daysContainer.appendChild(dayElement);
+                }
+            }
+
+            // Handle month navigation
+            document.getElementById('prev-month').addEventListener('click', () => {
+                const currentMonthText = document.getElementById('current-month').textContent;
+                const currentMonthDate = new Date(`${currentMonthText} 1, 2024`);
+                const prevMonthDate = new Date(currentMonthDate.setMonth(currentMonthDate.getMonth() - 1));
+                showCalendar(prevMonthDate);
+            });
+
+            document.getElementById('next-month').addEventListener('click', () => {
+                const currentMonthText = document.getElementById('current-month').textContent;
+                const currentMonthDate = new Date(`${currentMonthText} 1, 2024`);
+                const nextMonthDate = new Date(currentMonthDate.setMonth(currentMonthDate.getMonth() + 1));
+                showCalendar(nextMonthDate);
+            });
+        });
+</script>
+  
+  </body>
+  </html>

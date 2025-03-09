@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="services.css">
+</head>
+<body>
+
+       <!-- ----------------   Header Section   --------------- -->
+<section>
+    <div class="container">
+        <div>
+            <img src="./images/logo.png" alt="">
+        </div>
+        <div>
+            <div class="menu-bar">
+                <i class="fa-solid fa-bars" id="menu-icon"></i>
+            </div>
+            <div class="list" id="navbar">
+                <a href="Home.html">Home</a>
+                <a href="Find-a Doc.html">Find a Doctor</a>
+                <a href="#">Services</a>
+                <a href="Contact.html">Contact</a>
+                <div><a href="Login.html" class="btn">Login</a></div>
+            </div>
+        </div>
+    </div>
+</section>
+ <!-- ----------------   Header Section   --------------- --> 
+
+ <!-- ----------------   Services Section   --------------- --> 
+  <section>
+    <div class="service-container">
+        <div class="text-center mb-5">
+          <h2 class="service-heading">Our Medical Services</h2>
+          <p class="service-text_para">Experience world-class care with cutting-edge treatments and personalized attention. Our expert health system blends innovation and compassion to deliver unparalleled healthcare. From routine check-ups to specialized therapies, we are dedicated to your well-being.</p>
+        </div>
+        <div class="grid">
+          <!-- Cancer Care -->
+          <div class="service-card">
+            <img src="./images/cancer.jpg" alt="Cancer Care">
+            <div class="service-content">
+              <h2>Cancer Care</h2>
+              <p>Expert care for cancer patients, offering advanced treatments and personalized support.</p>
+            </div>
+            <div class="service-footer">
+              <a href="Find-a Doc.html">&#8594;</a>
+              <span class="service-index" style="background-color: #f5ce72;">1</span>
+            </div>
+          </div>
+          <!-- Labor & Delivery -->
+          <div class="service-card">
+            <img src="./images/SERVICE.jpg" alt="Labor & Delivery">
+            <div class="service-content">
+              <h2>Dietician</h2>
+              <p>Specialized guidance for healthy eating with personalized nutition plans.</p>
+            </div>
+            <div class="service-footer">
+              <a href="Find-a Doc.html">&#8594;</a>
+              <span class="service-index" style="background-color: #9f7ef9;">2</span>
+            </div>
+          </div>
+          <!-- Heart & Vascular -->
+          <div class="service-card">
+            <img src="./images/heart.webp" alt="Heart & Vascular">
+            <div class="service-content">
+              <h2>Heart & Vascular</h2>
+              <p>Specialized treatments for heart conditions with state-of-the-art technology.</p>
+            </div>
+            <div class="service-footer">
+              <a href="Find-a Doc.html">&#8594;</a>
+              <span class="service-index" style="background-color: #2ed1e0;">3</span>
+            </div>
+          </div>
+          <!-- Mental Health -->
+          <div class="service-card">
+            <img src="./images/mental.webp" alt="Mental Health">
+            <div class="service-content">
+              <h2>Mental Health</h2>
+              <p>Comprehensive mental health services to support emotional and psychological well-being.</p>
+            </div>
+            <div class="service-footer">
+              <a href="Find-a Doc.html">&#8594;</a>
+              <span class="service-index" style="background-color: #2ed1e0;">4</span>
+            </div>
+          </div>
+          <!-- Neurology -->
+          <div class="service-card">
+            <img src="./images/neurology.png" alt="Neurology">
+            <div class="service-content">
+              <h2>Neurology</h2>
+              <p>Advanced care for neurological disorders and brain health.</p>
+            </div>
+            <div class="service-footer">
+              <a href="Find-a Doc.html">&#8594;</a>
+              <span class="service-index" style="background-color: #F5ce72;">5</span>
+            </div>
+          </div>
+          <!-- Burn Treatment -->
+          <div class="service-card">
+            <img src="./images/burn.jpg" alt="Burn Treatment">
+            <div class="service-content">
+              <h2>Burn Treatment</h2>
+              <p>Specialized care for burn injuries, offering comprehensive recovery programs.</p>
+            </div>
+            <div class="service-footer">
+              <a href="Find-a Doc.html">&#8594;</a>
+              <span class="service-index" style="background-color: #9f7ef9;">6</span>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+ <!-- ----------------   Services Section   --------------- --> 
+ 
+<hr>
+
+ 
+      <!-- ----------------   Footer Section   -------------- -->
+    <section>
+     <div class="footer-container">
+        <div class="side-1">
+            <div><img src="./images/logo.png" alt="logo"></div>
+            <p>"Book your health appointments online – quick, 
+               <br class="display">easy, and convenient!".</p>
+            <div class="icons">
+                <div class="youtube"><i class="fa-brands fa-youtube fa-2x"></i></div>
+                <div class="github"><i class="fa-brands fa-github fa-2x"></i></div>
+                <div class="instagram"><i class="fa-brands fa-square-instagram fa-2x"></i></div>
+                <div class="linkdin"><i class="fa-brands fa-linkedin fa-2x"></i></div>
+            </div>
+        </div>
+        <div class="footer-part">
+            <h2>Quick links</h2>
+            <a href="#">Home</a>
+            <a href="#">About Us</a>
+            <a href="#">Services</a>
+            <a href="#">Blog</a>
+        </div>
+        <div class="footer-part">
+            <h2>I want to :</h2>
+            <a href="#">find a Doctor</a>
+            <a href="#">Request an Appointment</a>
+            <a href="#">Find a Location</a>
+            <a href="#">Get a Opinion</a>
+        </div>
+        <div class="footer-part">
+            <h2>Support</h2>
+            <a href="#">Donate</a>
+            <a href="#">Contact Us</a>
+            
+        </div>
+    </div>
+    </section>
+ <!-- ----------------   Footer Section   -------------- -->
+
+
+
+
+ <script>
+    // JavaScript to toggle the navigation menu on small screens
+const menuIcon = document.getElementById('menu-icon');
+const navbar = document.getElementById('navbar');
+
+menuIcon.addEventListener('click', () => {
+navbar.classList.toggle('active'); // Toggle 'active' class to show hide the menu
+});
+</script>
+</body>
+</html>

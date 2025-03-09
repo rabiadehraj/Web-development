@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" 
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="register.css">
+</head>
+<body>
+    
+    <!-- ----------------   Header Section   --------------- -->
+    <section>
+        <div class="container">
+            <div>
+                <img src="./images/logo.png" alt="">
+            </div>
+            <div>
+                <div class="menu-bar">
+                    <i class="fa-solid fa-bars" id="menu-icon"></i>
+                </div>
+                <div class="list" id="navbar">
+                    <a href="Home.html">Home</a>
+                    <a href="Find-a Doc.html">Find a Doctor</a>
+                    <a href="Services.html">Services</a>
+                    <a href="Contact.html">Contact</a>
+                    <div><a href="Login.html" class="btn">Login</a></div>
+                </div>
+            </div>
+        </div>
+    </section>
+     <!-- ----------------   Header Section   --------------- -->
+    
+
+     <!-- -------------   Registration Form   ------------ -->
+      <section>
+        <div class="form-container">
+            <!-- Left Section: Image or Illustration -->
+            <div class="left-container">
+                <img src="./images/signup.gif" alt="Illustration of a person adding a user with a form" />
+            </div>
+    
+            <!-- Right Section: Form for Account Creation -->
+            <div class="right-container">
+                <h2>Create an <span>Account</span></h2>
+                <form action="Find-a Doc.html">
+                    <input placeholder="Full Name" type="text" required />
+                    <input placeholder="Enter Your Email" type="email" required />
+                    <input placeholder="Password" type="password" required />
+
+                    <div class="formcontainer">
+                        <div class="form-flex">
+                          <label class="label">
+                            Are you a:
+                            <select name="role" class="select">
+                              <option value="patient">Patient</option>
+                              <option value="doctor">Doctor</option>
+                            </select>
+                          </label>
+                      
+                          <label class="label">
+                            Gender:
+                            <select name="gender" class="select">
+                              <option value="">Select</option>
+                              <option value="male">Male</option>
+                              <option value="female">Female</option>
+                              <option value="other">Other</option>
+                            </select>
+                          </label>
+                        </div>
+                      
+                        <div class="upload-photo-container">
+                          <figure class="avatar-container">
+                            <img src="./images/avatar-icon.png" class="avatar" alt="Avatar">
+                          </figure>
+                      
+                          <div class="file-upload-container">
+                            <input type="file" name="photo" id="customFile" accept=".jpg, .png" class="file-input">
+                            <label for="customFile" class="file-upload-label">Upload Photo</label>
+                          </div>
+                        </div>
+                      </div>
+                      
+    
+                    <!-- sign up button -->
+                    <button type="submit">Sign Up</button>
+                    
+                    <!-- login link (if already have an account) -->
+                    <div class="login-link">
+                        <p>Already have an account? <a href="Login.html">Login</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+      </section>
+     <!-- -------------   Registration Form   ------------ -->
+     
+
+    <!-- ----------------   Footer Section   --------------- -->
+     <section>
+      <div class="footer-container">
+        <div class="side-1">
+            <div><img src="./images/logo.png" alt="logo"></div>
+            <p>"Book your health appointments online – quick, 
+               <br class="display">easy, and convenient!".</p>
+            <div class="icons">
+                <div class="youtube"><i class="fa-brands fa-youtube fa-2x"></i></div>
+                <div class="github"><i class="fa-brands fa-github fa-2x"></i></div>
+                <div class="instagram"><i class="fa-brands fa-square-instagram fa-2x"></i></div>
+                <div class="linkdin"><i class="fa-brands fa-linkedin fa-2x"></i></div>
+            </div>
+        </div>
+        <div class="footer-part">
+            <h2>Quick links</h2>
+            <a href="#">Home</a>
+            <a href="#">About Us</a>
+            <a href="#">Services</a>
+            <a href="#">Blog</a>
+        </div>
+        <div class="footer-part">
+            <h2>I want to :</h2>
+            <a href="#">find a Doctor</a>
+            <a href="#">Request an Appointment</a>
+            <a href="#">Find a Location</a>
+            <a href="#">Get a Opinion</a>
+        </div>
+        <div class="footer-part">
+            <h2>Support</h2>
+            <a href="#">Donate</a>
+            <a href="#">Contact Us</a>
+            
+        </div>
+    </div>
+    </section>
+ <!-- ----------------   Footer Section   --------------- -->
+
+
+
+     <script>
+        // JavaScript to toggle the navigation menu on small screens
+const menuIcon = document.getElementById('menu-icon');
+const navbar = document.getElementById('navbar');
+
+menuIcon.addEventListener('click', () => {
+    navbar.classList.toggle('active'); // Toggle 'active' class to show/hide the menu
+});
+
+</script>
+
+</body>
+</html>
